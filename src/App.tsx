@@ -35,7 +35,6 @@ import SearchComponent from "./components/ui/animated-glowing-search-bar";
 import { CustomCursor } from "./components/ui/custom-cursor";
 import { MinimalistDock } from "./components/ui/minimal-dock";
 import Testimonials from "./components/ui/testimonials";
-import { GradientGenerator } from "./components/ui/graaadeints";
 
 const SESSION_ID = "0577a3255eb1792ceaaad801a7e4b0edf1773a970af10f6e91916efaca44ae5a4f";
 const EMERGENCY_URL = "https://youtu.be/dQw4w9WgXcQ?si=QsReTq8YYbmyLQcj";
@@ -744,29 +743,6 @@ export default function App() {
       </section>
 
       <Testimonials />
-
-      {/* Personalization Section */}
-      <section className="py-24 bg-background relative overflow-hidden" id="personalizar">
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col items-center mb-16">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="px-4 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-[10px] font-mono uppercase tracking-[0.2em] mb-4"
-            >
-              Herramienta de Personalización
-            </motion.div>
-            <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase italic text-center">
-              Tu Entorno <span className="text-primary italic">Único</span>
-            </h2>
-            <p className="text-muted-foreground max-w-xl text-center text-sm font-mono uppercase tracking-widest leading-loose">
-              Configura la atmósfera visual de tu panel de inteligencia. Genera gradientes atmosféricos con textura táctica.
-            </p>
-          </div>
-          <GradientGenerator />
-        </div>
-      </section>
 
       <Pricing />
 

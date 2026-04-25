@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { Home, Shield, Terminal, Search, Lock, Mail, MessageSquare, Palette } from 'lucide-react';
+import { Home, Shield, Terminal, Search, Lock, Mail, MessageSquare } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -17,7 +17,6 @@ const dockItems: DockItem[] = [
   { id: 'terminal', icon: <Terminal size={18} />, label: 'Consola', href: '#terminal' },
   { id: 'search', icon: <Search size={18} />, label: 'Búsqueda', href: '#darkweb' },
   { id: 'testimonials', icon: <MessageSquare size={18} />, label: 'Testimonios', href: '#testimonios' },
-  { id: 'personalize', icon: <Palette size={18} />, label: 'Estilo', href: '#personalizar' },
   { id: 'vault', icon: <Lock size={18} />, label: 'Bóveda', href: '#pricing' },
   { id: 'contact', icon: <Mail size={18} />, label: 'Contacto', href: '#contacto' },
 ];
