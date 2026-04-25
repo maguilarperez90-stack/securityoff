@@ -11,19 +11,19 @@
   --color-card-foreground: #d1d1d1;
   --color-popover: #080808;
   --color-popover-foreground: #d1d1d1;
-  --color-primary: #34a85a;
+  --color-primary: #00d4ff;
   --color-primary-foreground: #000000;
-  --color-secondary: #4a90e2;
-  --color-secondary-foreground: #000000;
+  --color-secondary: #0072ff;
+  --color-secondary-foreground: #ffffff;
   --color-muted: #121212;
   --color-muted-foreground: #71717a;
-  --color-accent: #22c55e;
+  --color-accent: #0084ff;
   --color-accent-foreground: #000000;
   --color-destructive: #7f1d1d;
   --color-destructive-foreground: #fecaca;
   --color-border: #1a1a1a;
   --color-input: #1a1a1a;
-  --color-ring: #22c55e;
+  --color-ring: #00d4ff;
 
   --radius-lg: 0.75rem;
   --radius-md: calc(0.75rem - 2px);
@@ -35,6 +35,7 @@
     @apply border-border;
     transition-property: opacity;
     transition-duration: 150ms;
+    scroll-behavior: smooth;
   }
   
   html, body {
@@ -42,11 +43,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none;
+    scroll-behavior: smooth;
   }
 
   ::selection {
-    background-color: rgba(52, 168, 90, 0.2);
-    color: #34a85a;
+    background-color: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
   }
 }
 
@@ -81,11 +83,11 @@
   @keyframes glow {
     0%, 100% {
       opacity: 0.6;
-      filter: drop-shadow(0 0 2px rgba(52, 168, 90, 0.3));
+      filter: drop-shadow(0 0 2px rgba(0, 212, 255, 0.3));
     }
     50% {
       opacity: 1;
-      filter: drop-shadow(0 0 8px rgba(52, 168, 90, 0.5));
+      filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.5));
     }
   }
 

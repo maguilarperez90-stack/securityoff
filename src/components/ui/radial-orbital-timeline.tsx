@@ -207,7 +207,7 @@ export default function RadialOrbitalTimeline({
                     isPulsing ? "animate-pulse duration-1000" : ""
                   }`}
                   style={{
-                    background: `radial-gradient(circle, rgba(52,168,90,0.1) 0%, rgba(52,168,90,0) 70%)`,
+                    background: `radial-gradient(circle, rgba(0,212,255,0.1) 0%, rgba(0,212,255,0) 70%)`,
                     width: `${item.energy * 0.5 + 40}px`,
                     height: `${item.energy * 0.5 + 40}px`,
                     left: `-${(item.energy * 0.5 + 40 - 40) / 2}px`,

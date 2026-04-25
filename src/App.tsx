@@ -102,7 +102,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               className="text-lg font-extrabold tracking-tight font-sans leading-none flex items-center gap-1 group"
             >
-              SECURITY.<span className="text-primary italic transition-all group-hover:drop-shadow-[0_0_8px_rgba(52,168,90,0.8)]">OFF</span>
+              SECURITY.<span className="text-primary italic transition-all group-hover:drop-shadow-[0_0_8px_rgba(0,212,255,0.8)]">OFF</span>
             </motion.span>
             <span className="text-[7px] text-muted-foreground uppercase tracking-[0.4em] font-black">Inteligencia Avanzada</span>
           </div>
@@ -250,10 +250,10 @@ const ServiceCard = ({ title, description, icon: Icon, features, premium = false
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ rotateX, rotateY }}
-      className={`relative p-8 rounded-2xl border transition-all duration-300 transform-gpu perspective-1000 ${premium ? 'border-primary/40 bg-primary/5 group shadow-[0_0_40px_rgba(51,204,51,0.05)]' : 'border-border bg-card/50 hover:border-primary/40 group'}`}
+      className={`relative p-8 rounded-2xl border transition-all duration-300 transform-gpu perspective-1000 ${premium ? 'border-primary/40 bg-primary/5 group shadow-[0_0_40px_rgba(0,212,255,0.05)]' : 'border-border bg-card/50 hover:border-primary/40 group'}`}
     >
       <div className="mb-6 flex justify-between items-start">
-        <div className={`p-4 rounded-xl bg-card border transition-colors ${premium ? 'border-primary shadow-[0_0_15px_rgba(51,204,51,0.2)]' : 'border-border group-hover:border-primary/50'}`}>
+        <div className={`p-4 rounded-xl bg-card border transition-colors ${premium ? 'border-primary shadow-[0_0_15px_rgba(0,212,255,0.2)]' : 'border-border group-hover:border-primary/50'}`}>
           <Icon className={`w-6 h-6 transition-transform group-hover:scale-110 ${premium ? 'text-primary' : 'text-foreground'}`} />
         </div>
       </div>
@@ -517,7 +517,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
          <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
-          fill="rgba(52, 168, 90, 0.1)"
+          fill="rgba(0, 212, 255, 0.1)"
         />
         <motion.div 
           style={{ 
